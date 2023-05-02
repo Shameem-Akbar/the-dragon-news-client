@@ -4,11 +4,10 @@ import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from 'react-ic
 import QZone from '../QZone/Qzone';
 import bg from '../../../assets/bg.png'
 
-
 const RightNav = () => {
     return (
         <div>
-            <h4 className='mt-4 mb-3'>Login With</h4>
+            <h4 className='mb-3'>Login With</h4>
             <div className="d-grid gap-1">
                 <Button variant="outline-primary"><FaGoogle /> Login With Google</Button>
                 <Button variant="outline-secondary"><FaGithub /> Login With Github</Button>
