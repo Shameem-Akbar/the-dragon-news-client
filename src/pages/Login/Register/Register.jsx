@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 import { useState } from 'react';
 import { sendEmailVerification, updateProfile } from 'firebase/auth';
+import useTitle from '../../../hooks/useTitle';
 
 const Register = () => {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
     const [accepted, setAccepted] = useState(false);
     const { createUser } = useContext(AuthContext);
-
+    useTitle("Register")
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
